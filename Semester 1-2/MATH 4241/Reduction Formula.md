@@ -1,5 +1,6 @@
   
 
+using $\int uv \, dx = u \int v \, dx - \int \left( u' \int v \, dx \right) dx$
 # Reduction Formula for $\int x^n e^x dx$
 
   
@@ -110,36 +111,24 @@ This is the required reduction formula for $\int \cos^n x \, dx$.
 
 ## Reduction Formula for $\int \sec^n x \, dx$
 
-  
-
-using $\int uv \, dx = u \int v \, dx - \int \left( u' \int v \, dx \right) dx$
-
-  
-
 Let $I_n = \int \sec^n x \, dx$.
 
 We strategically break down $\sec^n x$ as $\sec^{n-2}x \cdot \sec^2 x$.
 
   
-
 Let:
 
 $u = \sec^{n-2}x$
 
 $v = \sec^2 x$
 
-  
-
 Now, we find $u'$ and $\int v \, dx$:
-
-  
 
 1.  Find $u'$ (derivative of $u$)
 
     $$u' = \frac{d}{dx}(\sec^{n-2}x) = (n-2)\sec^{n-3}x \cdot (\sec x \tan x) = (n-2)\sec^{n-2}x \tan x$$
 
   
-
 2. Find $\int v \, dx$ (integral of $v$):
 
     $$\int v \, dx = \int \sec^2 x \, dx = \tan x$$
