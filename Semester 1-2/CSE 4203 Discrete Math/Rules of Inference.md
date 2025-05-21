@@ -17,5 +17,5 @@
 |                  | $p \land (p \lor q) \equiv p$                            | `$p \land (p \lor q) \equiv p$`                            |
 | Negation Laws    | $p \lor \neg p \equiv \text{true}$                       | `$p \lor \neg p \equiv \text{true}$`                       |
 |                  | $p \land \neg p \equiv \text{false}$                     | `$p \land \neg p \equiv \text{false}$`                     |
-ppppppppppp
-$\lnot$P
+
+
