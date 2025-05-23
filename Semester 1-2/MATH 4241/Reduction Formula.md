@@ -1,5 +1,9 @@
 
 
+![[Lecture 4 _Successive Reduction.pdf]]
+
+
+
 using $\int uv \, dx = u \int v \, dx - \int \left( u' \int v \, dx \right) dx$
 ### Reduction Formula for $\int x^n e^x dx$
   
@@ -85,6 +89,9 @@ I_n = \int \sec^n x \, dx
       + C
 }
 \end{align*}$$
+
+
+
 
 
 
