@@ -1,5 +1,6 @@
 
 
+
 ![[Lecture 4 _Successive Reduction.pdf]]
 
 
@@ -89,6 +90,7 @@ I_n = \int \sec^n x \, dx
       + C
 }
 \end{align*}$$
+
 
 
 
