@@ -3,7 +3,7 @@
 ![[Lecture 4 _Successive Reduction.pdf]]
 
 
-
+ 
 using $\int uv \, dx = u \int v \, dx - \int \left( u' \int v \, dx \right) dx$
 ### Reduction Formula for $\int x^n e^x dx$
   
@@ -47,7 +47,7 @@ I_n &= \sin^{n-1}x(-\cos x) - \int (n-1)\sin^{n-2}x \cos x(-\cos x)dx \\
 \end{align*}$$
 
 
-$$ \therefore I_n = \frac{-\sin^{n-1}x \cos x}{n} + \frac{n-1}{n}I_{n-2} \quad \text{is the required reduction formula for } \int \sin^n x \, dx $$
+$$ \therefore I_n = \frac{-\sin^{n-1}x \cos x}{n} + \frac{n-1}{n}I_{n-2}\,  + C \quad \text{is the required reduction formula for } \int \sin^n x \, dx $$
 ### Reduction Formula for $\int \cos^n x \, dx$
 $$\begin{align*}
 I_n &= \int \cos^n x \, dx 
@@ -64,7 +64,7 @@ I_n &= \int \cos^n x \, dx
        - (n-1)\,I_n \\[6pt]
 n\,I_n &= \cos^{n-1} x \,\sin x
          + (n-1)\,I_{n-2} \\[6pt]
-&\boxed{%
+&\boxed{
 I_n = \frac{\cos^{n-1} x \,\sin x}{n}
       + \frac{n-1}{n}\,I_{n-2}
       + C
@@ -91,8 +91,31 @@ I_n = \int \sec^n x \, dx
 \end{align*}$$
 
 
+### $\int^{\pi}_{0}\sin ^{5}x\,dx$  
 
+Solution:
+$$\begin{equation*}
+\begin{split}
+  \int \sin^n x\,dx
+    &= -\frac{\sin^{n-1}x\cos x}{n}
+       + \frac{n-1}{n}\,I_{n-2},\\
+  \int_0^\pi \sin^n x\,dx
+    &= \left[-\frac{\sin^{n-1}x\cos x}{n}\right]_0^{\frac{\pi}{2}}
+    \;+\;\frac{n-1}{n}\,\int ^{\frac{\pi}{2}}_{0}\sin ^{n-1}x \, dx = \frac{n-1}{n}\int ^{\frac{\pi}{2}}_{0}\sin ^{n-2 x } \, dx; n \geq 2 \\
+\therefore \int ^{\frac{\pi}{2}}_{0}\sin ^{5}x \, d & =\frac{4}{5}\times \frac{2}{3}\int ^{\frac{\pi}{2}}_{0}\sin x  \, dx = \frac{8}{15 }(-\cos x)^{\frac{\pi}{2}}_{0} = \frac{8}{15}
+\end{split}
+\end{equation*}$$
 
+### $\int ^{\frac{\pi}{2}}_{0} \sin ^{n}\, dx$
 
+Solution: 
+$$\begin{equation}
+\begin{split}
+&\int \sin ^{n}x \, dx = \left[ \frac{-\sin ^{n-1}\cos x}{n} \right]^{\frac{\pi}{2}}_{0} + \frac{n-1}{n}\int ^{\frac{\pi}2{}}_{0}\sin ^{n-2}x \, dx ; n \geq 2\\
+&I_{n} = \frac{n-1}{n}I_{n-2} = \left( \frac{n-1}{n} \right)\left( \frac{n-3}{n-2} \right)I_{n-4} = \left( \frac{n-1}{n} \right)\left( \frac{n-3}{n-2} \right)\left( \frac{n-5}{n-4} \right) I_{n-6} = \dots \\
+& = \left( \frac{n-1}{n} \right)\frac{n-3}{n-2}\frac{n-5}{n-4}\dots \frac{5}{6} \frac{3}{4} \frac{1}{2} I_{0}
+ = \left( \frac{n-1}{n} \right)\left( \frac{n-3}{n-2} \right)\frac{n-5}{n-4}\dots \frac{5}{6} \frac{3}{4} \frac{1}{2} \frac{\pi}{2}; \text{if n is even}
+\end{split}
+\end{equation}$$
 
 
